@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background: linear-gradient(130deg, #153677, #4e085f);
+        }
         #form{
             width:300px;
             margin:0 auto;
@@ -13,7 +16,8 @@
             padding:30px;
             padding-right: 50px;
             border-radius: 10px;
-            box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+            box-shadow:  5px 5px 15px rgba(42, 42, 42, 0.9);
+            background-color: white;
 
         }
         .form-control{
@@ -43,7 +47,7 @@
             background-color: #152cb0;
             color: white;
             cursor: pointer;
-        }C:\Users\bvenk\Desktop\js.pro
+        }
         .errormssg{
           color:red;
           margin-top: 0px;
@@ -57,7 +61,7 @@
 <body>
     <div id="form">
         <div class="form-control">
-            <label for="name">Name : <span>*</span</label>
+            <label for="name">Name : <span>*</span></label>
             <input type="text" id="name" name="name">
             <p class="errormssg" id="nameError"></p>
         </div>
@@ -67,19 +71,19 @@
             <p class="errormssg" id="emailError"></p>
         </div>
         <div class="form-control">
-            <label for="password">Password : <span>*</span</label>
+            <label for="password">Password : <span>*</span></label>
             <input type="text" id="password" name="password">
             <p class="errormssg" id="passwordError"></p>
 
         </div>
         <div class="form-control">
-            <label for="dob">Date Of Birth <span>*</span</label>
+            <label for="dob">Date Of Birth <span>*</span></label>
             <input type="date" id="dob" name="dob">
             <p class="errormssg" id="dobError"></p>
 
         </div>
         <div class="form-control">
-            <label for="gender">Gender <span>*</span</label>
+            <label for="gender">Gender <span>*</span></label>
             <select id="gender" name="gender">
                 <option value="">Selection..</option>
                 <option value="male">Male</option>
@@ -90,19 +94,19 @@
 
         </div>
         <div class="form-control">
-            <label for="address">Address : <span>*</span</label>
+            <label for="address">Address : <span>*</span></label>
             <input type="text" id="address" name="address">
             <p class="errormssg" id="addressError"></p>
 
         </div>
         <div class="form-control">
-            <label for="phoneN0">Phone Number : <span>*</span</label>
+            <label for="phoneN0">Phone Number : <span>*</span></label>
             <input type="phone" id="phoneNo" name="phoneN0">
             <p class="errormssg" id="phoneNoError"></p>
 
         </div>
         <div class="form-control">
-            <label for="country">Country</label>
+            <label for="country">Country  <span>*</span></label>
             <select id="country" name="country">
                 <option value="">Selection..</option>
                 <option value="india">India</option>

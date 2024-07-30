@@ -13,7 +13,7 @@ var isFormValid=validateName(name) &&  validateEmail(email) && validatePassword(
    function validateName(name){
     if(name.value.length===0){
         document.getElementById('nameError').style.display='block';
-        document.getElementById('nameError').innerHTML="name number is mandatory";
+        document.getElementById('nameError').innerHTML="Name is Requied";
         return false;
     }
     else{
@@ -42,8 +42,8 @@ var isFormValid=validateName(name) &&  validateEmail(email) && validatePassword(
     }
    }
    function validatePassword(password){
-    var passwordRegEx=/^(?=.*[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$/
-
+    var passwordRegEx=/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+                      
     if(password.value.length===0){
         document.getElementById('passwordError').style.display='block';
         document.getElementById('passwordError').innerHTML="password required";
